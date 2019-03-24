@@ -57,6 +57,7 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+    float:left;
 }
 
 h1,
@@ -392,6 +393,13 @@ input:-webkit-autofill:focus {
     opacity: 0.8
 }
 
+.center {
+    position: relative;          /* where the next element will be automatically positioned */
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 50%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+}
+
 .header-text h2 {
     margin-bottom: 20px;
     font-size: 40px;
@@ -411,6 +419,7 @@ input:-webkit-autofill:focus {
 .screen-slider.owl-carousel .owl-item {
     text-align: center
 }
+
 
 .screen-slider .owl-controls {
     position: absolute;
